@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- ESTO ES INNECESARIO PERO ES PARA TENER LOS ICONOS DE LAS REDES DEL FOOTER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- PARA FUENTES DE GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Bogle&display=swap" rel="stylesheet">
+  <!-- PARA CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header>
+
+      <div class="intro">
+        <div class="logo">
+          <img src="images/Uco.png" alt="logo de la universidad de cordoba" id="header">
+        </div>
+        <h2>WEB DE PRUEBA</h2>
+      </div>
+
+      <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#about">ABOUT</a>
+        <a href="#api">API</a>
+      </nav>
+
+  </header>
+
+  <main>
+    <section id="inicio">
+
+      <h1>PROGRAMACION WEB</h1>
+      <h2>Seminario 4 : HTML, CSS, JS, API</h2>
+      <img src="images/Uco.png" alt="logo uco" id="uco">
+
+    </section>
+
+    <section id="about">
+        <div class="enunciado">
+          <h2>ABOUT THIS PAGE</h2>
+
+          <p>Se pretende crear una página web completa que combine estructura (HTML),
+          estilo (CSS), interactividad (JavaScript) y datos externos (JSON vía API). Como
+          resultado, se generará una pequeña aplicación web funcional que resulte de la
+          integración de estos lenguajes.
+          </p>
+
+          <p>
+            Se construirá la base de la web en HTML con etiquetas semánticas.
+            <ol>
+              <li>Crea un nuevo archivo llamado 'index.html'.</li>
+              <li>Define la estructura básica del documento HTML5.</li>
+              <li>Añade secciones: header, nav, main, aside, footer.</li>
+              <li>Dentro del main, crea secciones con id='inicio', 'about' y 'api'.</li>
+            </ol>
+          </p>
+
+          <p>Y más...</p>
+
+        </div>
+
+        <div class="planteamiento">
+          <h2>OUR DESIGN</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla tenetur asperiores veritatis soluta, dolorem exercitationem ipsa dolores vero illo impedit eum odio animi culpa quasi dicta adipisci? Ducimus, sint.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla tenetur asperiores veritatis soluta, dolorem exercitationem ipsa dolores vero illo impedit eum odio animi culpa quasi dicta adipisci? Ducimus, sint.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla tenetur asperiores veritatis soluta, dolorem exercitationem ipsa dolores vero illo impedit eum odio animi culpa quasi dicta adipisci? Ducimus, sint.</p>
+
+        </div>
+    </section>
+
+    <section id="api">
+
+      <h2> DATOS SACADOS DE REPOSITORIO ONLINE </h2>
+
+      <div class="grid">
+          <div class="info">
+            <p>This button function is to fetch data from <a href="https://jsonplaceholder.typicode.com/users" target="_blank">here</a></p>
+            <button id="apiButton">Load resources</button>
+          </div>
+
+          <div class="content">
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <label for="nav">Contenido de pagina</label>
+    <nav aria-label="Contenido de la pagina">
+        <a href="#inicio">INICIO</a>
+        <a href="#about">ABOUT</a>
+        <a href="#api">API</a>
+    </nav>
+
+    <div class="rrss">
+          <label for="nav">Social Media</label>
+          <div class="social-media">
+              <a href="https://www.linkedin.com/in/javier-castilla-arroyo-37575036a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://instagram.com//javiicastiilla_" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/JxViii" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+    </div>
+
+    This web was created for an assigment for university
+
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

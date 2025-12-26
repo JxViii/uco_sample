@@ -1,0 +1,400 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  
+  :root{
+    --white: #f4f4f4;
+    --bg: #3b3454;
+    --black: #0c0032;
+    --sub-black: #8861fe;
+  }
+
+  body{
+    margin: 0;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    background: linear-gradient(
+      #dbc0ff,
+      var(--white) 40%
+    );
+    color: var(--black);
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* HEADER */
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    height: 80px;
+    padding: 1rem;
+    z-index: 20;
+  }
+
+  header .intro{
+    display: flex;
+    gap: 20px;
+  }
+
+  header .intro h2{
+    font-size: 1.6rem;
+  }
+
+  header .intro .logo{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    background: var(--black);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: transform .75s ease;
+    z-index: 2;
+  }
+
+  header .intro .logo img{
+    width: 70px;
+    height: 70px;
+  }
+
+  header .intro .logo::before{
+    position: absolute;
+    content:"";
+    inset: 0;
+    border: 2px solid var(--white);
+    margin: 4px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  header .intro .logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  header nav{
+    display: flex;
+    margin-right: 50px;
+    gap: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  header nav a{
+    color: var(--black);
+    text-decoration: none;
+    transition: color .25s ease;
+  }
+
+  header nav a:hover{
+    color: var(--sub-black);
+  }
+
+  /* <section id="inicio">
+
+      <h1>PROGRAMACION WEB</h1>
+      <h2>Seminario 4 : HTML, CSS, JS, API</h2>
+      <img src="images/Uco.png" alt="logo uco" id="uco">
+
+    </section> */
+
+  /* INICIO */
+
+  section#inicio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: -80px;
+    min-height: 100dvh;
+    pointer-events: none;
+  }
+
+  section#inicio h1, section#inicio h2{
+    margin: 0;
+  }
+
+  section#inicio h1{
+    font-size: 7rem;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    -webkit-text-stroke: 2px white;
+    font-style: normal;
+  }
+
+  section#inicio h2{
+    font-size: 1.7rem;
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke: 1px white;
+  }
+
+  section#inicio img{
+    position: absolute;
+    height: 300px;
+    filter: grayscale(.5);
+    z-index: -1;
+  }
+
+    /* ABOUT */
+
+    section#about{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      padding: 100px 1.5rem 300px 1.5rem;
+    }
+
+    section#about h2{
+      font-family: "";
+      text-align: center;
+      font-size: 3.2rem;
+      line-height: 70px;
+      border-bottom: 2px solid var(--black);
+      width: 95%;
+      margin: 1.5rem auto;
+      font-family: "BBH Bogle", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    section#about p{
+      text-align: justify;
+      line-height: 30px;
+      font-size: 1.1rem;
+      padding: .5rem;
+      margin: 0;
+    }
+
+    section#about li{
+      font-size: 1.1rem;
+    }
+
+    /* <section id="api">
+
+      <h2> DATOS SACADOS DE REPOSITORIO ONLINE </h2>
+
+      <div class="grid">
+          <div class="info">
+            <p>This button function is to fetch data from jsonplaceholder.typicode.com/users</p>
+            <button id="apiButton">FETCH() DATA</button>
+          </div>
+
+          <div class="content"></div>
+      </div>
+    </section> */
+
+    /* API */
+
+    section#api{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 110dvh;
+      padding-bottom: 90px;
+      background: linear-gradient(
+        #060015,
+        var(--black)
+      );
+      color: var(--white);
+    }
+
+    section#api::before{
+      position: absolute;
+      content: "";
+      inset: 0;
+      margin: -45px 0 0 0;
+      border-top: 40px solid #060015;
+      pointer-events: none;
+    }
+
+    section#api::after{
+      position: absolute;
+      content: "";
+      inset: 0;
+      margin: -80px 0 0 0;
+      border-top: 20px solid #060015;
+      pointer-events: none;
+    }
+
+    section#api h2{
+      font-size: 2rem;
+      font-family: "BBH Bartle", sans-serif;
+      font-weight: 400;
+      width: 60%;
+      text-align: center;
+      font-style: normal;
+    }
+
+    section#api .grid{
+      display: grid;
+      grid-template-columns: 300px 1000px;
+      gap: 30px;
+    }
+
+    section#api .grid .info p{
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+
+      &>a{
+        color: var(--sub-black);
+      }
+    }
+
+    section#api .grid div{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: .5rem;
+    }
+
+    section#api button{
+      position: relative;
+      border: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      color: var(--white);
+      padding: .5rem 1.5rem;
+      background: linear-gradient(to right,
+        rgba(117, 117, 249, 0.616) 20%,
+        rgba(108, 0, 74, 0.664) 40%,
+        rgba(255, 0, 47, 0.619) 100%
+      );
+
+      transition: letter-spacing .5s ease;
+    }
+
+    section#api button::before{
+      position: absolute;
+      content: "";
+      inset: 0;
+      border: 1px solid white;
+      margin: 3px;
+      transition: margin .5s ease;
+    }
+
+    section#api button:hover{
+      letter-spacing: 4px;
+    }
+
+    section#api button:hover::before{
+      margin: -10px;
+    }
+
+    section#api .content{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      border: 1px solid var(--white);
+    }
+
+    /* <footer>
+
+        <nav aria-label="Contenido de la página">
+            <a href="#inicio">INICIO</a>
+            <a href="#about">ABOUT</a>
+            <a href="#api">API</a>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/javier-castilla-arroyo-37575036a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com//javiicastiilla_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/JxViii" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+    </footer> */
+
+    /* FOOTER */
+
+    footer{
+      position: relative;
+      background: linear-gradient(
+        var(--black),
+        #9098ff
+      );
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding-bottom: 70px;
+      text-align: center;
+    }
+
+    footer::before{
+      position: absolute;
+      content: "";
+      inset: 0;
+      margin: -50px 0 0 0;
+      border-top: 8px solid var(--white);
+      pointer-events: none;
+    }
+
+    footer::after{
+      position: absolute;
+      content: "";
+      inset: 0;
+      margin: -90px 0 0 0;
+      border-top: 5px solid var(--white);
+      pointer-events: none;
+    }
+
+    footer label{
+      font-size: 1.4rem;
+      font-family: "BBH Bartle", sans-serif;
+      letter-spacing: 3px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    footer nav{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 80%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    footer a{
+      font-family: "BBH Bogle", sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: var(--white);
+      transition: color .25s ease;
+    }
+
+    footer a:hover{
+      color: var(--sub-black);
+    }
+
+    footer .rrss{
+      display: flex;
+      gap: 20px;
+      width: 50%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer .rrss .social-media{
+      display: flex;
+      gap: 40px;
+    }
+
+    footer .rrss .social-media a i{
+      font-size: 2rem;
+    }
+
+
+
+
