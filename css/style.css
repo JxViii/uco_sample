@@ -13,7 +13,7 @@
     min-height: 100dvh;
     overflow-x: hidden;
     background: linear-gradient(
-      #dbc0ff,
+      #ecddff,
       var(--white) 40%
     );
     color: var(--black);
@@ -396,5 +396,114 @@
     }
 
 
+@media (max-width: 1200px){
 
+    section#about{
+      display: flex;
+      flex-direction: column;
+      margin: 0 1rem;
+    }
+
+    section#api .grid{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    section#api .grid .content{
+      min-height: 50px;
+      margin: 0 1rem;
+    }
+
+}
+
+@media (max-width: 680px){
+
+  
+  header{
+    height: 60px;
+  }
+
+  header .intro{
+    align-items: center;
+  }
+
+  header .intro h2{
+    font-size: 1.5rem;
+  }
+
+  header .intro .logo{
+    height: 60px;
+    width: 60px;
+  }
+
+  header .intro .logo img{
+    width: 50px;
+    height: 50px;
+  }
+
+  header nav{
+    display: none;
+  }
+
+  section#inicio{
+    margin: 0 1.5rem;
+    gap: 10px;
+    margin-top: -60px;
+    min-height: 100dvh;
+    pointer-events: none;
+  }
+
+  section#inicio h1{
+    font-size: 3.8rem;
+    -webkit-text-stroke: 1px white;
+  }
+
+  section#inicio h2{
+    font-size: 1.3rem;
+    -webkit-text-stroke: 1px white;
+  }
+
+  section#inicio img{
+    height: 300px;
+  }
+
+  section#api{
+    padding: 0 1rem;
+  }
+
+  section#api h2{
+    font-size: 1.3rem;
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    font-style: normal;
+  }
+
+  section#about h2{
+    font-size: 2.8rem;
+    line-height: 90px;
+  }
+
+  section#about li{
+    line-height: 35px;
+  }
+
+  footer{
+    padding: 40px 1rem;
+  }
+
+  footer::before{
+    border-top: none;
+  }
+
+  footer::after{
+    border-top: none;
+  }
+
+  footer .rrss{
+    flex-direction: column;
+  }
+}
 

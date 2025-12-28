@@ -20,7 +20,7 @@
 
       <div class="intro">
         <div class="logo">
-          <img src="images/Uco.png" alt="logo de la universidad de cordoba" id="header">
+          <img src="images/Uco.png" alt="logo de la universidad de cordoba" loading="lazy" id="header">
         </div>
         <h2>WEB DE PRUEBA</h2>
       </div>
@@ -38,7 +38,7 @@
 
       <h1>PROGRAMACION WEB</h1>
       <h2>Seminario 4 : HTML, CSS, JS, API</h2>
-      <img src="images/Uco.png" alt="logo uco" id="uco">
+      <img src="images/Uco.png" alt="logo uco" loading="lazy" id="uco">
 
     </section>
 
@@ -114,7 +114,16 @@
     This web was created for an assigment for university
 
   </footer>
-
   <script src="js/script.js"></script>
+  <script src="js/ej8/A1.async.js" async></script>
+  <script src="js/ej8/A2.async.js" async></script>
+  <script src="js/ej8/D1.defer.js" defer></script>
+  <script src="js/ej8/D2.defer.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () =>
+    console.log('[PAGE] DOMContentLoaded'));
+    window.addEventListener('load', () =>
+    console.log('[PAGE] load'));
+  </script>
 </body>
 </html>
